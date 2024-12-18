@@ -1,66 +1,51 @@
-# Smart Irrigation System
+# Умная система орошения
 
-This project simulates a smart irrigation system using Python's Tkinter library for the graphical user interface. The system monitors soil moisture levels and controls a water pump based on manual or automatic modes.
+Этот проект симулирует умную систему орошения с использованием библиотеки Tkinter для графического пользовательского интерфейса. Система контролирует уровень влажности почвы и управляет насосом в ручном или автоматическом режимах.
 
-## Features
+## Функции
 
-- **Simulated Soil Moisture Sensor:**
-  - Decreases soil moisture over time to simulate natural drying.
-  - Allows the pump to increase soil moisture when activated.
+- **Симуляция датчика влажности почвы:**
+  - Уровень влажности почвы уменьшается со временем, имитируя естественное высыхание.
+  - При активации насоса влажность почвы увеличивается.
 
-- **Simulated Water Pump (Actuator):**
-  - Can be toggled manually or activated automatically when soil moisture falls below 30%.
+- **Симуляция насоса (актуатора):**
+  - Насос можно включать вручную или автоматически, если уровень влажности падает ниже 30%.
 
-- **Graphical User Interface:**
-  - Displays soil moisture levels.
-  - Provides buttons to switch between manual and automatic modes.
-  - Allows toggling the pump manually in manual mode.
+- **Графический интерфейс:**
+  - Отображает текущий уровень влажности почвы.
+  - Предоставляет кнопки для переключения между ручным и автоматическим режимами.
+  - Позволяет вручную включать и выключать насос в ручном режиме.
 
-- **Localization:**
-  - The user interface is fully in Russian.
+- **Локализация:**
+  - Интерфейс полностью на русском языке.
 
-## Prerequisites
+## Предварительные требования
 
 - Python 3.x
-- Tkinter (comes pre-installed with Python)
+- Tkinter (устанавливается вместе с Python)
 
-## Installation
+## Установка
 
-1. Clone this repository:
+1. Клонируйте этот репозиторий:
    ```bash
    git clone <repository-url>
    ```
 
-2. Navigate to the project directory:
+2. Перейдите в директорию проекта:
    ```bash
    cd smart-irrigation-system
    ```
 
-3. Run the script:
+3. Запустите скрипт:
    ```bash
    python main.py
    ```
 
-## Usage
+## Использование
 
-1. Start the application by running the `main.py` script.
-2. Monitor the soil moisture level displayed on the screen.
-3. Use the "Включить/Выключить насос (Ручной режим)" button to manually toggle the pump.
-4. Switch to automatic mode using the "Переключить в Автоматический режим" button.
-   - In automatic mode, the pump will activate automatically if the soil moisture drops below 30%.
-5. Return to manual mode by clicking the same button (now labeled "Переключить в Ручной режим").
-
-## Project Structure
-
-- `main.py`: Contains the full implementation of the sensor, actuator, and GUI.
-
-## Future Enhancements
-
-- Add more languages for localization.
-- Introduce real hardware integration for IoT devices.
-- Display logs or history of soil moisture levels and pump activity.
-- Implement finer control over moisture level thresholds in the automatic mode.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+1. Запустите приложение, выполнив скрипт `main.py`.
+2. Следите за уровнем влажности почвы, отображаемым на экране.
+3. Используйте кнопку "Включить/Выключить насос (Ручной режим)" для ручного управления насосом.
+4. Переключитесь в автоматический режим, нажав кнопку "Переключить в Автоматический режим".
+   - В автоматическом режиме насос включается автоматически, если уровень влажности падает ниже 30%.
+5. Вернитесь в ручной режим, нажав ту же кнопку (теперь она называется "Переключить в Ручной режим").
